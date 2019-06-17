@@ -1,0 +1,12 @@
+<nav>
+    <div class="section-container">
+        <ul>
+            <li><img id="logo" src="img/logo.png" alt=""></li>
+            <li><a asp-controller="Home" asp-action="Index" class="active"></a></li>
+            <li><a href='@Url.Action("Index","Home")'>Home</a></li>
+            <li><a href='@Url.Action("Index","Cadastro")'>Cadastro</a></li>
+            <li><a href='@Url.Action("Index","Login")'>Login</a></li>
+            <li><a href='@Url.Action("Index","Sac")'>Sac</a></li>
+        </ul>
+    </div>
+</nav>

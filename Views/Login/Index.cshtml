@@ -1,0 +1,32 @@
+@{
+    Html.RenderPartial("_HeaderNavBar");
+    Layout = "_Layout";
+}
+<head> 
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+
+<html>
+    <div class="CAPUTINO">
+        <section id="login">
+            <div class="quadrado-login">
+                <h1>Faça seu login aqui:</h1>
+                </br>
+                </br>
+                <form action="Login/Login" method="POST">
+                    <label for="">E-mail:</label>
+                    </br>
+                    <input name="email" type="email">
+                    </br>
+                    </br>
+                    <label for="">Senha:</label>
+                    </br>
+                    <input name="senha" type="text">
+                    </br>
+                    </br>
+                    <input type="submit" value="Entrar">
+                </form>
+            </div>
+        </section>
+    </div>
+</html>

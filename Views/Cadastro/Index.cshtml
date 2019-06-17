@@ -1,0 +1,44 @@
+@{
+    Html.RenderPartial("_HeaderNavBar");
+    Layout = "_Layout";
+}
+
+<head> 
+    <link rel="stylesheet" href="/css/cadastro.css">
+</head>
+
+<html>
+        <div class="CAPUTINO">
+        <!-- <img id="cafe" src="img/fundo_cadastro_login.jpg"> -->
+        <section id="cadastro">
+        <div class="quadrado-cadastro">
+            <p>Faça seu cadastro para compra:</p>
+            </br>
+            <form action="Cadastro/RegistrarUsuario" method="POST">
+                <label for="">Nome Completo:</label>
+                </br>
+                <input name="nome" type="text">
+                </br>
+                </br>
+                <label for="">E-mail:</label>
+                </br>
+                <input name="email" type="email">
+                </br>
+                </br>
+                <label for="">Senha:</label>
+                </br>
+                <input name="senha" type="text">
+                </br>
+                </br>
+                <label for="">Data de Nascimento:</label>
+                </br>
+                <input name="dataNascimento" type="text" >
+                </br>
+                </br>
+                </br>
+                <input class="botao" type="submit" value="Enviar">
+            </form>
+        </div>
+        </div>
+    </section>
+</html>

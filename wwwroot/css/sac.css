@@ -1,0 +1,10 @@
+#comentarios{
+    background-image: linear-gradient(to right top, #051937, #004a7a, #0081a0, #00b896, #12eb5d);
+}
+#letras{
+    font-family: 'PT Sans', sans-serif;
+}
+.input {
+    height: 150px;
+    width: 30%;
+}

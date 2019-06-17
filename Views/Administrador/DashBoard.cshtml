@@ -1,0 +1,46 @@
+@model PROJETO_FINAL___Ponto_Digital.ViewModels.ComentariosViewModel;
+@using PROJETO_FINAL___Ponto_Digital.Models;
+@using PROJETO_FINAL___Ponto_Digital.Repositorios;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devide-width, inicial-scale=1.0">
+    <link rel="stylesheet" href="/css/administrador.css">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href='@Url.Action("Index","Home")'>Home</a></li>
+                <li><a href='@Url.Action("Listar","Administrador")'>Listar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Tela de Administrador</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>EMAIL</th>
+                    <th>COMENTÁRIO</th>
+                    <th>DATA DO COMENTÁRIO</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.ListaDeComentarios)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Email</td>
+                        <td>@item.Comentario</td>
+                        <td>@item.DataComentario</td>
+                        <td>
+                            <td><button><a href="/Administrador/AprovarComentario?id=@item.Id">Aprovar</a></button></td>
+                            <td><button><a href="/Administrador/RejeitarComentario?id=@item.Id">Reprovar</a></button></td>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </main>
+</body>

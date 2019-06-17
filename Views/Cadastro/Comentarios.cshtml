@@ -1,0 +1,22 @@
+@using PROJETO_FINAL___Ponto_Digital.Models;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devide-width, inicial-scale=1.0">
+    <link rel="stylesheet" href="/css/administrador.css">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href='@Url.Action("Index","Home")'>Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Comentários</h2>
+        <form method="POST" action='@Url.Action("Comentarios", "Cadastro")'>
+            <textarea name="comentario" cols="30" rows="5" name="200" >Escreva seu comentário:</textarea>
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+</body>
